@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>index</title>
+</head>
+<body bgcolor="green">
+<h1>Welcome To Bank Of NG</h1>
+<a href"regestration.html"> REGESTRATION</a>
+<a href"login"> LOGIN</a>
+
+
+</body>
+</html>
