@@ -1,8 +1,0 @@
-INDEX VERSION 1.4+C:\Users\ADMIN\Documents\Repository\Backend\ADVANCED JAVA\JSP-NARAGOUD\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-921087373.index
-3478092784.index
-3040323195.index
-3326086529.index
-4150646589.index
-3465429860.index
-3015272399.index

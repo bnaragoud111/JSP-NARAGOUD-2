@@ -1,4 +1,0 @@
-2026-03-17 09:42:35,786 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
-2026-03-17 09:50:49,629 [Worker-18: https://download.jboss.org/jbosstools/photon/stable/updates/site.xml] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - ex-0000000006 https://download.jboss.org:443 responded with status 503; request will be automatically re-executed in 1 SECONDS (exec count 2)
-2026-03-17 09:50:52,296 [Worker-13: https://download.jboss.org/jbosstools/photon/stable/updates/compositeContent.jar] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - ex-0000000009 https://download.jboss.org:443 responded with status 503; request will be automatically re-executed in 1 SECONDS (exec count 2)
-2026-03-17 17:23:48,401 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
