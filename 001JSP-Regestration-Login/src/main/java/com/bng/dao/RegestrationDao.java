@@ -6,6 +6,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 
+import com.bng.config.DbUtil;
+
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
@@ -14,6 +16,8 @@ public class RegestrationDao {
 	
 	public void saveUser(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 		// TODO Auto-generated method stub
+		System.out.println("++++++++ Inside RegestrationDao ++++++++");
+
 		PrintWriter out = resp.getWriter();
 		String userName=req.getParameter("userName");
 		String email=req.getParameter("email");
@@ -22,12 +26,14 @@ public class RegestrationDao {
 
 		 try {
 	         // 1. Load Driver
-	         Class.forName("com.mysql.cj.jdbc.Driver");
+			// Load driver from properties
+	            Class.forName(DbUtil.getDriver());
 
-	         // 2. Create Connection
-	         Connection con = DriverManager.getConnection(
-	                 "jdbc:mysql://localhost:3306/userdb", "root", "password");
-
+	            // Create connection using properties
+	            Connection con = DriverManager.getConnection(
+	            		DbUtil.getUrl(),
+	            		DbUtil.getUsername(),
+	            		DbUtil.getPassword());
 	         // 3. Prepare Query
 	         String query = "INSERT INTO users(username, email, phone, password) VALUES (?, ?, ?, ?)";
 	         PreparedStatement ps = con.prepareStatement(query);
