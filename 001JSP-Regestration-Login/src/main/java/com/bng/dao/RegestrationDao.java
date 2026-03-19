@@ -6,7 +6,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 
-import com.bng.config.DbUtil;
+import com.bng.config.DBConnection;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -25,15 +25,11 @@ public class RegestrationDao {
 		String password=req.getParameter("password");
 
 		 try {
-	         // 1. Load Driver
-			// Load driver from properties
-	            Class.forName(DbUtil.getDriver());
+	         
 
 	            // Create connection using properties
-	            Connection con = DriverManager.getConnection(
-	            		DbUtil.getUrl(),
-	            		DbUtil.getUsername(),
-	            		DbUtil.getPassword());
+	           
+	           Connection con=  DBConnection.getConnection();
 	         // 3. Prepare Query
 	         String query = "INSERT INTO users(username, email, phone, password) VALUES (?, ?, ?, ?)";
 	         PreparedStatement ps = con.prepareStatement(query);
