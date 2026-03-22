@@ -26,7 +26,8 @@ if (user == null) {
 	<h4>Check Bank Statement</h4>
 	<h4>Request Cheque Book</h4>
 	<h4>Apply Loan</h4>
-		<h2><a href="logout.jsp" style="text-align: right; color:red; margin-left: 20px;">logout </a></h2>
+	<!--	<h2><a href="logout.jsp" style="text-align: right; color:red; margin-left: 20px;">logout </a></h2> -->
+		<h2><a href="logout" style="text-align: right; color:red; margin-left: 20px;">logout </a></h2> 
 	
 
 </body>
